@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2006-2014 Wade Alcorn - wade@bindshell.net
+# Browser Exploitation Framework (BeEF) - http://beefproject.com
+# See the file 'doc/COPYING' for copying permission
+#
+beef:
+    module:
+        activex_meterpreter:
+            enable: true
+            category: "Browser"
+            name: "ActiveX Meterpreter"
+            description: "This module attempts to download and run a meterpreter payload using ActiveX and powershell."
+            authors: ["Gabe Marshall"]
+            target:
+                 working: ["IE"]
+                 not_working: ["All"]
